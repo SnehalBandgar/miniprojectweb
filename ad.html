@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Store</title>
+  <style>
+    body {
+      background-color:bisque;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .books {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .book {
+      width: calc(33.33% - 20px);
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    .book img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .book-title {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .add-to-cart {
+      display: inline-block;
+      background-color: #4CAF50;
+      color: white;
+      padding: 8px 16px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .add-to-cart:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to our Book Store</h1>
+    <div class="books">
+      <div class="book">
+        <img src="add1.png" alt="Book 1" >
+        <div class="book-title">Book 1</div>
+        <h3>34.6$</h3>
+        <button class="add-to-cart" onclick="addToCart('add1')">Add to Cart</button>
+      </div>
+      <div class="book">
+        <img src="addbook2.png" alt="Book 2"  height="100">
+        <div class="book-title">Book 2</div>
+        <h3>12.99$</h3>
+        <button class="add-to-cart" onclick="addToCart('addbook2')">Add to Cart</button>
+      </div>
+      <div class="book">
+        <img src="addbook3.png" alt="Book 3">
+        <div class="book-title">Book 3</div>
+        <h3>22.78$</h3>
+        <button class="add-to-cart" onclick="addToCart('addbook3')">Add to Cart</button>
+      </div>
+      <div class="book">
+        <img src="addbook4.png" alt="Book 3">
+        <div class="book-title">Book 4</div>
+        <h3>44$</h3>
+        <button class="add-to-cart" onclick="addToCart('addbook4')">Add to Cart</button>
+      </div>
+      <div class="book">
+        <img src="addbook5.png" alt="Book 3">
+        <div class="book-title">Book 5</div>
+        <h3>56.45$</h3>
+        <button class="add-to-cart" onclick="addToCart('addbook5')">Add to Cart</button>
+      </div>
+      <div class="book">
+        <img src="addbook6.png" alt="Book 3">
+        <div class="book-title">Book 6</div>
+        <h3>55.5$</h3>
+        <button class="add-to-cart" onclick="addToCart('addbook6')">Add to Cart</button>
+      </div>
+      <!-- Repeat similar structure for more books -->
+    </div>
+  </div>
+
+  <script>
+    function addToCart(bookName) {
+      // Simulate adding to cart by alerting the book name
+      alert(bookName + " added to cart!");
+    }
+  </script>
+</body>
+</html>

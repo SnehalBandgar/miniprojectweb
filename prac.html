@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        .hero-section {
+            background-image: url('back3.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            position: relative;
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 150px;
+            height: auto;
+        }
+        .offer {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 80%;
+            margin-bottom: 20px;
+        }
+        .shop-now-btn {
+            padding: 10px 20px;
+            background-color: #4285f4;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .shop-now-btn:hover {
+            background-color: #357ae8;
+        }
+        .benefits {
+            background-color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .benefits h2 {
+            margin-bottom: 20px;
+        }
+        .benefits ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .benefits ul li {
+            margin-bottom: 10px;
+        }
+        .subscribe-section {
+            background-image: url('subscribeimg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .subscribe-form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+        .subscribe-form input[type="email"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .subscribe-form input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #ff6b6b;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .subscribe-form input[type="submit"]:hover {
+            background-color: #ff4f4f;
+        }
+        .contact-details {
+            margin-top: 20px;
+        }
+        .contact-details p {
+            margin-bottom: 5px;
+        }
+        .other-websites {
+            margin-top: 20px;
+        }
+        .other-websites a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 10px;
+            transition: color 0.3s ease;
+        }
+        .other-websites a:hover {
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero-section">
+        <img class="logo" src="logo.png" alt="Your Logo">
+        <div class="offer">
+            <h1>Special Offer!</h1>
+            <p>Get 20% off on your first purchase.</p>
+            <a href="#" class="shop-now-btn">Shop Now</a>
+        </div>
+    </header>
+    <div class="benefits">
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>Wide selection of high-quality products</li>
+            <li>Fast and reliable shipping</li>
+            <li>24/7 customer support</li>
+            <li>Easy returns and exchanges</li>
+        </ul>
+    </div>
+    <section class="subscribe-section">
+        <div class="subscribe-form">
+            <h2>Subscribe to our newsletter</h2>
+            <form action="#" method="post">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+        <div class="contact-details">
+            <p>Contact us: support@yourbookstore.com</p>
+            <p>123 Main Street, Cityville, Country</p>
+        </div>
+        <div class="other-websites">
+            <p>Explore more:</p>
+            <a href="#">Amazon Books</a>
+            <a href="#">Barnes & Noble</a>
+            <a href="#">Goodreads</a>
+        </div>
+    </section>
+</body>
+</html>

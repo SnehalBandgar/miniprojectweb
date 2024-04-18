@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Store</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.book {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.book img {
+  max-width: 100%;
+}
+
+.cart {
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.cart ul {
+  padding: 0;
+}
+
+.cart button {
+  display: block;
+  margin-top: 10px;
+}
+
+</style>
+<body>
+
+<div class="container">
+  <h2>Book Store</h2>
+  <div class="books">
+    <div class="book">
+      <img src="book1.jpg" alt="Book 1">
+      <h3>Book 1</h3>
+      <p>$10</p>
+      <button class="add-to-cart" onclick="addToCart('Book 1', 10)">Add to Cart</button>
+    </div>
+    <!-- Repeat the above book div for other books -->
+  </div>
+  
+  <div id="cart" class="cart">
+    <h3>Cart</h3>
+    <ul id="cart-items">
+      <!-- Cart items will be added dynamically using JavaScript -->
+    </ul>
+    <p>Total: $<span id="total">0</span></p>
+    <button onclick="checkout()">Checkout</button>
+  </div>
+</div>
+
+<script src="script.js">
+    let cartItems = [];
+let total = 0;
+
+function addToCart(name, price) {
+  cartItems.push({ name, price });
+  total += price;
+  
+  updateCart();
+}
+
+function updateCart() {
+  const cartList = document.getElementById('cart-items');
+  cartList.innerHTML = '';
+  
+  cartItems.forEach(item => {
+    const li = document.createElement('li');
+    li.textContent = `${item.name} - $${item.price}`;
+    cartList.appendChild(li);
+  });
+  
+  document.getElementById('total').textContent = total;
+}
+
+function checkout() {
+  alert('Thank you for your purchase!');
+  // Here you can add backend integration for actual payment processing
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative; /* Added for positioning close button */
+    width: 400px;
+    margin: 80px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"] {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.create-account {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+.create-account a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.create-account a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: #dc3545;
+    margin-bottom: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <a href="C:\Users\a2z\OneDrive\Desktop\snehal\main project\project.html" class="close-button"><img src="C:\Users\a2z\Downloads\closebutton.png" alt="Close" width="20" height="20"></a> <!-- Added close button -->
+    <h2>Login</h2>
+    <form id="loginForm" onsubmit="return validateForm()">
+        <input type="text" id="username" name="username" placeholder="Username" required>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Sign In">
+        <div class="error-message" id="errorMessage"></div>
+    </form>
+    <div class="forgot-password" onclick="forgotPassword()">Forgot Password?</div>
+    <div class="create-account">Don't have an account? <a href="#">Create Account</a></div>
+</div>
+
+<script>
+function validateForm() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    if (username === "" || password === "") {
+        document.getElementById("errorMessage").innerHTML = "Please enter both username and password.";
+        return false;
+    }
+
+    // Additional validation can be added here if needed
+
+    return true;
+}
+
+function forgotPassword() {
+    alert("Forgot Password functionality will be implemented here.");
+}
+</script>
+
+</body>
+</html>

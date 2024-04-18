@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product-card h2 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.product-card p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.product-card span {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+.product-card button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Product Catalog</h1>
+    </header>
+    <main>
+        <div class="product-card">
+            <img src="book1.png" alt="Product 1">
+            <h2>Product 1</h2>
+            <p>Description of Product 1</p>
+            <span>$19.99</span>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="book2.png" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description of Product 2</p>
+            <span>$24.99</span>
+            <button>Add to Cart</button>
+        </div>
+        <!-- Add more product cards here -->
+    </main>
+    <footer>
+        <p>&copy; 2024 Product Catalog</p>
+    </footer>
+</body>
+</html>

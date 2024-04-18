@@ -1,0 +1,144 @@
+<html>
+<head>
+<style>
+.hero {
+  background: #468fb9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+
+.hero h1 {
+  margin-bottom: 20px;
+}
+
+.cta {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.books-section {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.book {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.book img {
+  max-width: 100%;
+  height: 70%;
+  border-radius: 5px;
+}
+
+.book h3 {
+  margin: 10px 0;
+}
+
+.book p {
+  font-style: italic;
+}
+</style>
+
+
+
+
+<body>
+<section class="hero">
+    <div class="container">
+      <h1>Welcome to our Book Website</h1>
+      <a href="#" class="cta">HERE ARE SOME BEST BOOKS FOR YOU</a>
+    </div>
+  </section>
+<section class="books-section">
+  <div class="container">
+    <div class="books-grid">
+      <div class="book">
+        <img src="add1.jpg" alt="Book 1" width="200" height="200">
+        <h3>SOUL</h3>
+        <p>Author:OLIVIA WILSOM</p>
+        <p>Price: $44.99</p>
+	 <button onclick="addToCart('Book Title 1', 'Author Name 1', 19.99)">Add to Cart</button>
+            
+      </div>
+  
+      <div class="book">
+        <img src="add2.jpg" width="200" height="200" alt="Book 2">
+        <h3>MODERN SPACES</h3>
+        <p>Author:FRANCISCO SPENSER</p>
+         <p>Price: $54.99</p>
+       <button onclick="addToCart('Book Title 1', 'Author Name 1', 19.99)">Add to Cart</button>
+      </div>
+      <div class="book">
+        <img src="add3.jpg" width="200" height="200" alt="Book 3">
+        <h3>THE MIND OF LEADER</h3>
+        <p>Author:KEVIN ABDERSON</p>
+         <p>Price: $74.99</p>
+	<button onclick="addToCart('Book Title 1', 'Author Name 1', 19.99)">Add to Cart</button>
+      </div>
+      <div class="book">
+        <img src="add4.jpg" width="200" height="200" alt="Book 3">
+        <h3>IMPORTANCE OD EDUCTION</h3>
+        <p>Author:d</p>
+        <p>Price: $49.99</p>
+	<button onclick="addToCart('Book Title 1', 'Author Name 1',$49.99)">Add to Cart</button>
+      </div>
+    
+      <div class="book">
+        <img src="add5.jpg" width="200" height="200" alt="Book 5">
+        <h3>LAST HOPE</h3>
+        <p>Author:GIDMI</p>
+         <p>Price: $43.99</p>
+	<button onclick="addToCart('LAST HOPE, 'Author:GIDMI', $43.99)">Add to Cart</button>
+      </div>
+      <div class="book">
+        <img src="add6.jpg" width="200" height="100" alt="Book 6">
+        <h3>DON'T LOOK BACK</h3>
+        <p>Author:ISSC NELSON</p>
+        <p>Price: $34.99</p>
+	<button onclick="addToCart('DON'T LOOK BACK', 'Author:ISSC NELSON', $34.99)">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+<div id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items">
+            <!-- Cart items will be added dynamically here -->
+        </ul>
+    </div>
+
+    <script>
+        function addToCart(title, author, price) {
+            var cartItem = document.createElement('li');
+            cartItem.textContent = title + ' - ' + author + ' ($' + price.toFixed(2) + ')';
+            
+            document.getElementById('cart-items').appendChild(cartItem);
+        }
+    </script>
+  
+</section>
+<script>
+        function addToCart(title, author, price) {
+            var cartItem = document.createElement('li');
+            cartItem.textContent = title + ' - ' + author + ' ($' + price.toFixed(2) + ')';
+            
+            document.getElementById('cart-items').appendChild(cartItem);
+        }
+    </script>
+</body>
+</html>

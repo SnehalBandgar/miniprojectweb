@@ -1,0 +1,33 @@
+
+
+section{
+    padding: 5rem 9%;
+
+}
+.home{
+    background: url('C:\Users\a2z\Downloads\stand.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.home .row .content{
+    flex: 1 1 42rem;
+}
+.home .row .book-slider{
+    flex: 1 1 42rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.home .row .book-slider a img{
+    height:25rem;
+
+}
+.home .row .book-slider a:hover img{
+    transform: scale(.9);
+
+}
