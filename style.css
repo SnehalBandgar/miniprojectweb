@@ -1,0 +1,263 @@
+
+
+:root{
+    background-color: bisque;
+    --green:#27ae60;
+    --dark-color:#219150;
+    --black:#444;
+    --light-color:#666;
+    --border:.1rem solid rgba(0,0,0,.1);
+    --border-hover:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family:'Poppins',sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border:none ;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    transition: width none;
+    
+}
+
+html{
+    background-color: bisque;
+    font-size: 65%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem ;
+    scroll-behavior: smooth;
+
+}
+
+html::-webkit-scrollbar{
+    width:1rem;
+}
+html::-webkit-scrollbar-track{
+    background-image:url(back3.png);
+}
+html::-webkit-scrollbar-thumb{
+    background:var(--black);
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    border-radius: .5rem;
+    color: #fff;
+    background: var(--green);
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+.btn:hover{
+    background: var(--dark-color);
+}
+
+
+.header .header-1{
+    background: #fff;
+    padding: 1.5rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .header-1 .logo{
+    font-size: 4.5rem;
+    font-weight: bolder;
+    color: var(--black);
+}
+.header .header-1 .s-search{
+    width: 50rem;
+    height: 5rem;
+    border: var(--border);
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: .5rem;
+    
+}
+.header .header-1 .s-search input{
+    font-size: 1.5rem;
+    padding: 0 2.2rem;
+    height: 100%;
+    width: 100%;
+    text-transform: none;
+    color: var(--black);
+}
+.header .header-1 .s-search label{
+    font-size: 2.5rem;
+    padding-right: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+.header .header-1 .s-search label:hover{
+    color: var(--green);
+
+}
+.header .header-1 .icons a{
+    font-size: 3.5rem;
+    margin-left: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+.header .header-1 .icons a:hover{
+    color: var(--green);
+}
+#search-btn{
+    display: none;
+}
+.header .header-2{
+    background: var(--green);
+}
+.header .header-2 .navbar{
+    text-align: center;
+}
+.header .header-2 .navbar a{
+    color: #fff;
+    display: inline-block;
+    padding: 2rem;
+    font-size: 3rem;
+}
+.header .header-2 .navbar a:hover{
+    background: var(--dark-color);
+}
+
+.image{
+    text-align: center;
+    gap: 1rem;
+   
+    
+}
+    
+
+.benefits{
+    color:brown;
+    text-align: center;
+    gap: .5rem;
+    font-size: 2.5rem;
+    
+}
+.benefits p{
+    font-size: 2rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.benefits1 h1{
+    color: brown;
+    text-align: center;
+    font-size: 3rem;
+    padding-right: 35%;
+    gap: .5rem;
+}
+.benefits1 p{
+    font-size: 2rem;
+    color: var(--black);
+    text-align: center;
+    font-weight: bold;
+    gap: .5rem;
+}
+.benefits2 h1{
+    color: brown;
+    text-align: center;
+    font-size: 3rem;
+    padding-right: 35%;
+    gap: .5rem;
+}
+.benefits2 p{
+    font-size: 2rem;
+    color: var(--black);
+    text-align: center;
+    font-weight: bold;
+    gap: .5rem;
+}
+.benefits3 h1{
+    color: brown;
+    text-align: center;
+    font-size: 3rem;
+    padding-right: 35%;
+    gap: .5rem;
+}
+.benefits3 p{
+    font-size: 2rem;
+    color: var(--black);
+    text-align: center;
+    font-weight: bold;
+    gap: .5rem;
+}
+.benefits4 h1{
+    color: brown;
+    text-align: center;
+    font-size: 3rem;
+    padding-right: 35%;
+    gap: .5rem;
+}
+.benefits4 p{
+    font-size: 2rem;
+    color: var(--black);
+    text-align: center;
+    font-weight: bold;
+    gap: .5rem;
+}
+.benefits5 h1{
+    color: brown;
+    text-align: center;
+    font-size: 3rem;
+    padding-right: 35%;
+    gap: .5rem;
+}
+.benefits5 p{
+    font-size: 2rem;
+    color: var(--black);
+    text-align: center;
+    font-weight: bold;
+    gap: .5rem;
+}
+.read{
+    text-align: center;
+    color: blue;
+}
+
+
+.subscribe-section {
+    background-image: url('subscribeimg.png');
+    background-size: cover;
+    background-position: center;
+    color:black;
+    font-size: 15px;
+    padding: 60px 0;
+    text-align: center;
+}
+.subscribe-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: url(subback.png);
+    border-radius: 10px;
+}
+.subscribe-form input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border:2px solid black;
+    border-radius: 5px;
+}
+.subscribe-form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #468fb9 ;
+    color:white;
+    border:none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color .3 ease;
+}
+.subscribe-form input[type="submit"]:hover {
+    background-color: #468fb9;
+    
+}
